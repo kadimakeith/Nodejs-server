@@ -2,12 +2,11 @@
 const http = require('http');
 
 const textserver = http.createServer( function(req, res){
-    res.writeHead(200,{'Content-Type':'text/plain'})
 
+    res.writeHead(200,{'Content-Type':'text/plain'})
     
     res.end('Hello everyone, I am a response and I came from a server')
 
-    
 });
 
 const jsonserver = http.createServer((req, res) =>{
@@ -25,8 +24,8 @@ const jsonserver = http.createServer((req, res) =>{
 });
 
 const htmlserver = http.createServer( function(req, res){
-    res.writeHead(200,{'Content-Type':'text/html'})
 
+    res.writeHead(200,{'Content-Type':'text/html'})
     
     res.end(`
         <html>
